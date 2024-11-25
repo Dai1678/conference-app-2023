@@ -126,12 +126,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: dawidd6/action-download-artifact@246dbf436b23d7c49e21a7ab8204ca9ecd1fe615 # v2.27.0
+      - uses: dawidd6/action-download-artifact@v6 # v2.27.0
         with:
           run_id: ${{ github.event.workflow_run.id }}
           name: test-results
           path: .test-results
-      - uses: dawidd6/action-download-artifact@246dbf436b23d7c49e21a7ab8204ca9ecd1fe615 # v2.27.0
+      - uses: dawidd6/action-download-artifact@v6 # v2.27.0
         with:
           run_id: ${{ github.event.workflow_run.id }}
           name: event-payload
